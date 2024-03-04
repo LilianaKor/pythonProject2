@@ -15,12 +15,11 @@ def lowercase_count(string):
 lowercase_count = lambda s: sum(e.islower() for e in s)
 
 # Your task is simply to count the total number of lowercase letters in a string.
-#
 # Examples
-# "abc" ===> 3
-# "abcABC123" ===> 3
-# "abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~" ===> 3
-# "" ===> 0;
-# "ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~" ===> 0
-# "abcdefghijklmnopqrstuvwxyz" ===> 26
+"abcd" ===> 4
+"abcdABCD1234" ===> 4
+"abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~" ===> 4
+"" ===> 0;
+"ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~" ===> 0
+"abcdefghijklmnopqrstuvwxyz" ===> 26
 
