@@ -1,7 +1,7 @@
 import math
 import functools
 
-#Round a off to three decimal places
+# Round a off to three decimal places
 # a = 10.04735
 # result_1 = None
 # result_1 = round(a,3)
@@ -49,15 +49,17 @@ import functools
 #     result_3 = len(last_name) * first_name
 # print(result_3)
 
-#Enter a random string, which includes only digits.
-#Write code which find a sum of digits in this string and save it
+# Enter a random string, which includes only digits.
+# Write code which find a sum of digits in this string and save it
 # into result_3 variable'''
 
 string_number = input('Enter random digits: ')
 result_4 = 0
-#list_numbers = int(string_number)
-#print(list_number)
-#print(functools.reduce(lambda a, b: a+b, list_numbers))
+
+
+# list_numbers = int(string_number)
+# print(list_number)
+# print(functools.reduce(lambda a, b: a+b, list_numbers))
 # for digit in string_number:
 #     result_4
 # for char in string_number:
@@ -65,13 +67,13 @@ result_4 = 0
 # print(result_4)
 
 
-#distance = int(input('Enter distance traveled:'))
+# distance = int(input('Enter distance traveled:'))
 
 
 def taxi_fare(distance):
     total_fare = (distance * 1000 / 140) * 4
-    return round(total_fare,2)
+    return round(total_fare, 2)
+
 
 distance = int(input('Enter distance traveled:'))
 print(taxi_fare(distance))
-
