@@ -1,3 +1,5 @@
+#from preloaded import NATO  # NATO['A'] == 'Alfa', etc
+
 # The idea for this kata came from 9gag today:
 #
 #     Task
@@ -92,7 +94,7 @@ from preloaded import NATO  # NATO['A'] == 'Alfa', etc
 def to_nato(words: str) -> str:
     lst = []
     for i in words:
-        if i.upper() in NATO.keys()
+        if i.upper() in NATO.keys():
             lst.append(NATO.ge(i_apper())
             else:
             if i != '':
@@ -100,8 +102,6 @@ def to_nato(words: str) -> str:
 
     return " ".join(lst)
 
-
-from preloaded import NATO # NATO['A'] == 'Alfa', etc
 
 from preloaded import NATO  # NATO['A'] == 'Alfa', etc
 
