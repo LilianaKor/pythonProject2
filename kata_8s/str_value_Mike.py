@@ -48,6 +48,6 @@ fishes = ['Roan', 'Bass', 'Mako', 'Carp', 'Tuna', 'Dory', 'Snook', 'Perch', 'Man
 my_fish = [fish for fish in fishes if len(fish) >= 5]
 friend_fish = [fish for fish in fishes if len(fish) < 5]
 
-print("Мои рыбы:", my_fish)
-print("Рыбы друга:", friend_fish)
+print("My fishes", my_fish)
+print("My friednd's fishes:", friend_fish)
 
