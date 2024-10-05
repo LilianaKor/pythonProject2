@@ -1,13 +1,14 @@
 class Person:
     def __init__(self, name):
         self.name = name
+
     def greet(self, your_name):
-      return "Hello %s, my name is %s" % (your_name, self.name)
+        return "Hello %s, my name is %s" % (your_name, self.name)
 
 
 # It would be nice if we didnt have to always pass in my_name every time we needed to great someone.
 
-class Person:
+class Person2:
 
     def __init__(self, name):
         self.name = name
@@ -16,7 +17,7 @@ class Person:
         return "Hello {you}, my name is {me}".format(you=your_name, me=self.name)
 
 
-class Person:
+class Person3:
     def __init__(self, name: str) -> None:
         self.name = name
 
