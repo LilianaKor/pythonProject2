@@ -15,19 +15,19 @@ import functools
 #
 # # Enter capital city of california state in lower case. Change the case to title case
 # # #Save the result in result_co_capital variable'''
-#
+
 # result_ca_capital = 'sacramento'
 # print(result_ca_capital.title())
 # print(result_ca_capital.upper())
 # print(result_ca_capital.lower())
 # print(result_ca_capital.capitalize())
-#
-#
+
+
 # #Enter the temperatute right now in Fahrenheit in the temperature_f variable in
 # # a string (e.g. '75') and convert it to Celsius.
 # #! Important you should save only number to result_temperature.
 # #Formula (32F - 32) * 5/9 = 0C'''
-#
+
 # temperature_f = '75'
 # #temperature_f = int(temperature_f)
 # result_temperature =(int(temperature_f) - 32) * 5/9
