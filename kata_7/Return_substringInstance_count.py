@@ -1,18 +1,18 @@
 def solution(full_text, search_text):
     return full_text.count(search_text)
 
-def solution(stg, sub):
+
+def solution1(stg, sub):
     return stg.count(sub)
 
-def solution(full_text: str, search_text: str) -> int:
+
+def solution2(full_text: str, search_text: str) -> int:
     """ Get the number of times the `search_text` is found within the `full_text`. """
     return full_text.count(search_text)
 
-
-# Complete the solution so that it returns the number of times the search_text is found within the full_text. Overlap is not permitted : "aaa" contains 1 instance of "aa", not 2.
+# Complete the solution so that it returns the number of times the search_text is found within the full_text. Overlap
+# is not permitted : "aaa" contains 1 instance of "aa", not 2.
 #  Usage example:
-# full_text = "aa_bb_cc_dd_bb_e", search_text = "bb"
-#     ---> should return 2 since "bb" shows up twice
-#
-# full_text = "aaabbbcccc", search_text = "bbb"
-#     ---> should return 1
+# full_text = "aa_bb_cc_dd_bb_e", search_text = "bb" ---> should return 2 since "bb" shows up twice
+
+# full_text = "aaabbbcccc", search_text = "bbb"   ---> should return 1
