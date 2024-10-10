@@ -9,7 +9,7 @@ def is_digit(n):
     return bool(re.fullmatch(pattern, n))
 
 
-import re
+#import re
 
 
 def is_digit1(n):
