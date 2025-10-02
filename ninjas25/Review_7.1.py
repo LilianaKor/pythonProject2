@@ -63,48 +63,48 @@ Home work
 # account.info()
 
 
-class Student:
-    def __init__(self, name, grades):
-        self.name = name
-        self.grades = grades
-
-    def add_grade(self, grade):
-        self.grades.append(grade)
-
-    def averege(self):
-        return sum(self.grades) / len(self.grades)
-
-
-student = Student("Alice", [90, 95, 81, 99, 85])
-student.add_grade(95)
-print(student.averege())
-
-
-class Calculator:
-    def __init__(self, value=0):
-        self.value = value
-
-    def add(self, x):
-        self.value += x
-
-    def sub(self, x):
-        self.value -= x
-
-    def mul(self, x):
-        self.value *= x
-
-    def div(self, x):
-        if x == 0:
-            raise ValueError("Division by zero")
-        self.value /= x
-
-    def show(self):
-        print(self.value)
+# class Student:
+#     def __init__(self, name, grades):
+#         self.name = name
+#         self.grades = grades
+#
+#     def add_grade(self, grade):
+#         self.grades.append(grade)
+#
+#     def averege(self):
+#         return sum(self.grades) / len(self.grades)
+#
+#
+# student = Student("Alice", [90, 95, 81, 99, 85])
+# student.add_grade(95)
+# print(student.averege())
 
 
-calculator = Calculator()
-calculator.add(5)
-calculator.sub(2)
-calculator.mul(3)
-calculator.div(2)
-calculator.show()
+# class Calculator:
+#     def __init__(self, value=0):
+#         self.value = value
+#
+#     def add(self, x):
+#         self.value += x
+#
+#     def sub(self, x):
+#         self.value -= x
+#
+#     def mul(self, x):
+#         self.value *= x
+#
+#     def div(self, x):
+#         if x == 0:
+#             raise ValueError("Division by zero")
+#         self.value /= x
+#
+#     def show(self):
+#         print(self.value)
+#
+#
+# calculator = Calculator()
+# calculator.add(5)
+# calculator.sub(2)
+# calculator.mul(3)
+# calculator.div(2)
+# calculator.show()
