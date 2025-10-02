@@ -110,26 +110,52 @@ Home work
 # calculator.show()
 
 
-class TrafficLight:
-    def __init__(self):
-        self.color = "red"
+# class TrafficLight:
+#     def __init__(self):
+#         self.color = "red"
+#
+#     def change(self):
+#         if self.color == "red":
+#             self.color = "yellow"
+#         elif self.color == "yellow":
+#             self.color = "green"
+#         elif self.color == "green":
+#             self.color = "red"
+#
+#
+#     def status(self):
+#         print(f"Лампа {self.color}")
+#
+#
+# traffic_light = TrafficLight()
+# traffic_light.change()
+# traffic_light.status()
 
-    def change(self):
-        if self.color == "red":
-            self.color = "yellow"
-        elif self.color == "yellow":
-            self.color = "green"
-        elif self.color == "green":
-            self.color = "red"
 
-
-    def status(self):
-        print(f"Лампа {self.color}")
-
-
-traffic_light = TrafficLight()
-traffic_light.change()
-traffic_light.status()
-
-
-
+# class Thermometer:
+#     def __init__(self, celsius):
+#         self.celsius = celsius
+#
+#     def set_temp_c(self, celsius):
+#         self.celsius = celsius
+#
+#     def set_temp_f(self, fahrenheit):
+#         self.celsius = (fahrenheit - 32) * 5 / 9
+#
+#     def get_temp_c(self):
+#         return self.celsius
+#
+#     def get_temp_f(self):
+#         return self.celsius * 9 / 5 + 32
+#
+#     def show(self):
+#         print(f"Температура в Цельсиях: {self.celsius}°C")
+#         print(f"Температура в Фаренгейтах: {self.get_temp_f()}°F")
+#
+#
+# thermometer = Thermometer(25)
+# thermometer.show()
+# thermometer.set_temp_c(30)
+# thermometer.show()
+# thermometer.set_temp_f(86)
+# thermometer.show()
