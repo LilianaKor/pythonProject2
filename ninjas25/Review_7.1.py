@@ -63,21 +63,21 @@ Home work
 # account.info()
 
 
-# class Student:
-#     def __init__(self, name, grades):
-#         self.name = name
-#         self.grades = grades
-#
-#     def add_grade(self, grade):
-#         self.grades.append(grade)
-#
-#     def averege(self):
-#         return sum(self.grades) / len(self.grades)
-#
-#
-# student = Student("Alice", [90, 95, 81, 99, 85])
-# student.add_grade(95)
-# print(student.averege())
+class Student:
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
+
+    def add_grade(self, grade):
+        self.grades.append(grade)
+
+    def averege(self):
+        return sum(self.grades) / len(self.grades)
+
+
+student = Student("Alice", [90, 95, 81, 99, 85])
+student.add_grade(95)
+print(student.averege())
 
 
 class Calculator:
