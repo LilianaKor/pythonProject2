@@ -73,8 +73,8 @@ Home work
 #
 #     def averege(self):
 #         return sum(self.grades) / len(self.grades)
-#
-#
+
+
 # student = Student("Alice", [90, 95, 81, 99, 85])
 # student.add_grade(95)
 # print(student.averege())
@@ -100,11 +100,36 @@ Home work
 #
 #     def show(self):
 #         print(self.value)
-#
-#
+
+
 # calculator = Calculator()
 # calculator.add(5)
 # calculator.sub(2)
 # calculator.mul(3)
 # calculator.div(2)
 # calculator.show()
+
+
+class TrafficLight:
+    def __init__(self):
+        self.color = "red"
+
+    def change(self):
+        if self.color == "red":
+            self.color = "yellow"
+        elif self.color == "yellow":
+            self.color = "green"
+        elif self.color == "green":
+            self.color = "red"
+
+
+    def status(self):
+        print(f"Лампа {self.color}")
+
+
+traffic_light = TrafficLight()
+traffic_light.change()
+traffic_light.status()
+
+
+
