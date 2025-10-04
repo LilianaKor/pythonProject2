@@ -159,3 +159,46 @@ Home work
 # thermometer.show()
 # thermometer.set_temp_f(86)
 # thermometer.show()
+
+
+# input s = "abcd", t = "abcde"
+# Output: "e"
+# explanation: 'e' is the letter that was added.
+
+
+# class Solution:
+#     def findTheDifference(self, s: str, t: str) -> str:
+#         list_s = list(s)  # превращаем строку в список
+#         for ch in t:  # идём по каждой букве в t
+#             if ch in list_s:
+#                 list_s.remove(ch)  # убираем совпавший символ
+#             else:
+#                 return ch  # если символа нет в s → это и есть ответ
+#
+# s = "abcd"
+# t = "abcde"
+# sol = Solution()
+# print(sol.findTheDifference(s, t))
+
+
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        list_s = list(s)
+        for char in t:
+            if char in list_s:
+                list_s.remove(char)
+            else:
+                return char
+
+
+s = "abcd"
+t = "abcde"
+sol = Solution()
+print(sol.findTheDifference(s, t))
+
+
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        for i in t:
+            if s.count(i) != t.count(i):
+                return i
