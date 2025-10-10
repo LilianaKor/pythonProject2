@@ -12,3 +12,6 @@ class BankAccount:
             print("Недостаточно средств")
         else:
             self._balance -= amount
+
+    def balance(self):
+        return self._balance
