@@ -15,3 +15,9 @@ class BankAccount:
 
     def get_balance(self):
         return self._balance
+
+
+#2
+class OverdraftAccount(BankAccount):
+    def withdraw(self, amount):
+        self._balance -= amount
