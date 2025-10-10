@@ -8,10 +8,10 @@ class BankAccount:
         self._balance += amount
 
     def withdraw(self, amount):
-        if self._balance - amount > 0:
+        if self._balance - amount < 0:
             print("Недостаточно средств")
         else:
             self._balance -= amount
 
-    def balance(self):
+    def get_balance(self):
         return self._balance
