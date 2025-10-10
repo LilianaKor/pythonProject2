@@ -6,3 +6,9 @@ class BankAccount:
 
     def deposit(self, amount):
         self._balance += amount
+
+    def withdraw(self, amount):
+        if self._balance - amount > 0:
+            print("Недостаточно средств")
+        else:
+            self._balance -= amount
