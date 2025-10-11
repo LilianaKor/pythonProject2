@@ -152,4 +152,4 @@ my_toyota.accelerate()
 my_toyota.accelerate()
 my_toyota.accelerate()
 my_toyota.accelerate()
-my_toyota.display_speed() # вывел в консоль 3
+my_toyota.display_speed()     #вывел в консоль 3
