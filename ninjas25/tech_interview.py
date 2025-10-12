@@ -49,6 +49,7 @@
 
 from collections import Counter
 
+
 # def count_chars(s):
 #     return Counter(s)
 #
@@ -101,3 +102,13 @@ from collections import Counter
 # max_num = max(my_list)
 # print(max_num)
 
+#  or without using max()
+def find_max(nums):
+    max_num = nums[0]
+    for num in nums:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+
+# 8. Generate Fibonacci sequence    Task: Print the first n numbers of the Fibonacci sequence.
