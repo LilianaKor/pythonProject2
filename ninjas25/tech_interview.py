@@ -40,7 +40,7 @@
 # print(count_vowels("apricot"))
 
 
-#4. Подсчёт повторяющихся символов в строке
+# 4. Подсчёт повторяющихся символов в строке
 
 # def count_duplicates(s):
 #     return len(s) - len(set(s))
@@ -74,6 +74,3 @@ for num in merged:
 # Шаг 3: Сортируем (используем встроенный sorted или ручную сортировку)
 sorted_unique = sorted(unique)
 print(sorted_unique)
-
-
-
