@@ -1,13 +1,12 @@
-# 1. To reversea a string
+# 1. Task: To reverse a string
 
-# string = "offer"
+string = "offer"
 
 
-# def reverse(string):
-#     return ''.join(reversed(string))
-#
-#
-# print(reverse(string))
+def reverse(string):
+    return ''.join(reversed(string))
+
+print(reverse(string))
 
 
 # def reverse_string(s: str) -> str:
@@ -15,52 +14,51 @@
 #     for char in s:
 #         result = char + result
 #     return result
-#
-#
+
 # print(reverse_string(string))
 
 
-# 2. To check if a string is a palindrome
-# string = "civic"
-# def is_palindrome(s):
-#     return s == s[::-1]
-#
-# print(is_palindrome(string))
+# 2. Task: To check if a string is a palindrome
+string = "civic"
+def is_palindrome(s):
+    return s == s[::-1]
+
+print(is_palindrome(string))
 
 
-# 3.  Count vowels in a string   Task: Count how many vowels (a, e, i, o, u) are in a string.
-# def count_vowels(s):
-#     return sum(c in 'aeiou' for c in s.lower())
-#
-# print(count_vowels("Hello"))
+# 3. Task: Count vowels in a string   Task: Count how many vowels (a, e, i, o, u) are in a string.
+def count_vowels(s):
+    return sum(c in 'aeiou' for c in s.lower())
+
+print(count_vowels("Hello"))
 
 # def count_vowels(s):
 #     return sum(1 for char in s.lower() if char in 'aeiou')
-#
+
 # print(count_vowels("apricot"))
 
 
-# 4. Подсчёт повторяющихся символов в строке
+# 4. Task: Подсчёт повторяющихся символов в строке
 
-# def count_duplicates(s):
-#     return len(s) - len(set(s))
-#
-# print(count_duplicates("Hello"))
+def count_duplicates(s):
+    return len(s) - len(set(s))
+
+print(count_duplicates("Hello"))
 
 from collections import Counter
 
 
-# def count_chars(s):
-#     return Counter(s)
-#
-# print(count_chars("Hello"))
+def count_chars(s):
+    return Counter(s)
 
-# 5. убрать дубликаты, объединить массивы и отсортировать их в порядке возрастания:
-# arr1 = [2, 5, 1, 6, 6, 8]
-# arr2 = [5, 6, 3, 4, 6, 1]
-#
-# merged_sorted = sorted(set(arr1 + arr2))
-# print(merged_sorted)
+print(count_chars("Hello"))
+
+# 5. Task: убрать дубликаты, объединить массивы и отсортировать их в порядке возрастания:
+arr1 = [2, 5, 1, 6, 6, 8]
+arr2 = [5, 6, 3, 4, 6, 1]
+
+merged_sorted = sorted(set(arr1 + arr2))
+print(merged_sorted)
 
 # or – Решение без set():
 # arr1 = [2, 22, 9, 5, 1, 6, 6, 8]
@@ -76,7 +74,7 @@ from collections import Counter
 # sorted_unique = sorted(unique)
 # print(sorted_unique)
 
-# 6.  Write a short program that prints each number from 1 to 100 on a new line.
+# 6. Task:  Write a short program that prints each number from 1 to 100 on a new line.
 #  For each multiple of 3, print "Fizz" instead of the number.
 #  For each multiple of 5, print "Buzz" instead of the number.
 #  For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number. Напишите короткую программу,
@@ -88,7 +86,7 @@ from collections import Counter
 # for num in range(1, 101):
 #     if num % 3 == 0 and num % 5 == 0:
 #         print("FizzBuzz")  # Multiple of both 3 and 5
-#
+
 #     elif num % 3 == 0:
 #         print("Fizz")
 #     elif num % 5 == 0:
@@ -96,19 +94,44 @@ from collections import Counter
 #     else:
 #         print(num)
 
-# 7. Find the maximum number in a list
+# 7. Task: Find the maximum number in a list
 
-# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# max_num = max(my_list)
-# print(max_num)
+my_list = [1, 2, 3, 4, 55, 6, 7, 8, 9, 10]
+max_num = max(my_list)
+print(max_num)
 
 #  or without using max()
-def find_max(nums):
-    max_num = nums[0]
-    for num in nums:
-        if num > max_num:
-            max_num = num
-    return max_num
+# def find_max(nums):
+#     max_num = nums[0]
+#     for num in nums:
+#         if num > max_num:
+#             max_num = num
+#     return max_num
 
 
-# 8. Generate Fibonacci sequence    Task: Print the first n numbers of the Fibonacci sequence.
+# 8. Task: Generate Fibonacci sequence    Task: Print the first n numbers of the Fibonacci sequence.
+
+# def fibonacci(n):
+#     if n <= 0:
+#         return []
+#     elif n == 1:
+#         return [0]
+#     elif n == 2:
+#         return [0, 1]
+#     else:
+#         fib = [0, 1]
+#         for i in range(2, n):
+#             fib.append(fib[i - 1] + fib[i - 2])
+#         return fib
+
+# print(fibonacci(10))
+
+
+# def fibonacci(n):
+#     a, b = 0, 1
+#     for _ in range(n):
+#         print(a, end=' ')
+#         a, b = b, a + b
+
+
+# print(fibonacci(10))
