@@ -1,6 +1,6 @@
 # 1. To reversea a string
 
-string = "offer"
+# string = "offer"
 
 
 # def reverse(string):
@@ -10,17 +10,49 @@ string = "offer"
 # print(reverse(string))
 
 
-def reverse_string(s: str) -> str:
-    result = ''
-    for char in s:
-        result = char + result
-    return result
-
-
-print(reverse_string(string))
+# def reverse_string(s: str) -> str:
+#     result = ''
+#     for char in s:
+#         result = char + result
+#     return result
+#
+#
+# print(reverse_string(string))
 
 
 # 2. To check if a string is a palindrome
+# string = "civic"
+# def is_palindrome(s):
+#     return s == s[::-1]
+#
+# print(is_palindrome(string))
 
-def is_palindrome(s):
-    return s == s[::-1]
+
+# 3.  Count vowels in a string   Task: Count how many vowels (a, e, i, o, u) are in a string.
+# def count_vowels(s):
+#     return sum(c in 'aeiou' for c in s.lower())
+#
+# print(count_vowels("Hello"))
+
+# def count_vowels(s):
+#     return sum(1 for char in s.lower() if char in 'aeiou')
+#
+# print(count_vowels("apricot"))
+
+#4. Подсчёт повторяющихся символов в строке
+
+# def count_duplicates(s):
+#     return len(s) - len(set(s))
+#
+# print(count_duplicates("Hello"))
+
+from collections import Counter
+
+# def count_chars(s):
+#     return Counter(s)
+#
+# print(count_chars("Hello"))
+
+# 5
+
+
