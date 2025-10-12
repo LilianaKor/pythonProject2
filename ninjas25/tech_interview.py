@@ -54,7 +54,7 @@ from collections import Counter
 #
 # print(count_chars("Hello"))
 
-# 5 убрать дубликаты, объединить массивы и отсортировать их в порядке возрастания:
+# 5. убрать дубликаты, объединить массивы и отсортировать их в порядке возрастания:
 # arr1 = [2, 5, 1, 6, 6, 8]
 # arr2 = [5, 6, 3, 4, 6, 1]
 #
@@ -62,15 +62,35 @@ from collections import Counter
 # print(merged_sorted)
 
 # or – Решение без set():
-arr1 = [2, 22, 9, 5, 1, 6, 6, 8]
-arr2 = [5, 6, 22, 3, 4, 1, 2, 1, 3, 6, 1]
-# Шаг 1: Объединяем массивы
-merged = arr1 + arr2
-# Шаг 2: Убираем дубликаты вручную
-unique = []
-for num in merged:
-    if num not in unique:
-        unique.append(num)
-# Шаг 3: Сортируем (используем встроенный sorted или ручную сортировку)
-sorted_unique = sorted(unique)
-print(sorted_unique)
+# arr1 = [2, 22, 9, 5, 1, 6, 6, 8]
+# arr2 = [5, 6, 22, 3, 4, 1, 2, 1, 3, 6, 1]
+# # Шаг 1: Объединяем массивы
+# merged = arr1 + arr2
+# # Шаг 2: Убираем дубликаты вручную
+# unique = []
+# for num in merged:
+#     if num not in unique:
+#         unique.append(num)
+# # Шаг 3: Сортируем (используем встроенный sorted или ручную сортировку)
+# sorted_unique = sorted(unique)
+# print(sorted_unique)
+
+# 6.  Write a short program that prints each number from 1 to 100 on a new line.
+#  For each multiple of 3, print "Fizz" instead of the number.
+#  For each multiple of 5, print "Buzz" instead of the number.
+#  For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number. Напишите короткую программу,
+# которая выводит каждое число от 1 до 100 на новой строке.
+#  Для каждого числа, кратного 3, выведите «Fizz» вместо числа.
+#  Для каждого числа, кратного 5, выведите «Buzz» вместо числа.
+#     Для чисел, кратных как 3, так и 5, выведите «FizzBuzz» вместо числа.
+
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")  # Multiple of both 3 and 5
+
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
