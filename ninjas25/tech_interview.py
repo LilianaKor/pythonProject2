@@ -54,6 +54,26 @@ from collections import Counter
 #
 # print(count_chars("Hello"))
 
-# 5
+# 5 убрать дубликаты, объединить массивы и отсортировать их в порядке возрастания:
+# arr1 = [2, 5, 1, 6, 6, 8]
+# arr2 = [5, 6, 3, 4, 6, 1]
+#
+# merged_sorted = sorted(set(arr1 + arr2))
+# print(merged_sorted)
+
+# or – Решение без set():
+arr1 = [2, 22, 9, 5, 1, 6, 6, 8]
+arr2 = [5, 6, 22, 3, 4, 1, 2, 1, 3, 6, 1]
+# Шаг 1: Объединяем массивы
+merged = arr1 + arr2
+# Шаг 2: Убираем дубликаты вручную
+unique = []
+for num in merged:
+    if num not in unique:
+        unique.append(num)
+# Шаг 3: Сортируем (используем встроенный sorted или ручную сортировку)
+sorted_unique = sorted(unique)
+print(sorted_unique)
+
 
 
