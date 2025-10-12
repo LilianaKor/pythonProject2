@@ -39,6 +39,7 @@
 #
 # print(count_vowels("apricot"))
 
+
 #4. Подсчёт повторяющихся символов в строке
 
 # def count_duplicates(s):
