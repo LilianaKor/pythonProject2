@@ -84,13 +84,20 @@ from collections import Counter
 #  Для каждого числа, кратного 5, выведите «Buzz» вместо числа.
 #     Для чисел, кратных как 3, так и 5, выведите «FizzBuzz» вместо числа.
 
-for num in range(1, 101):
-    if num % 3 == 0 and num % 5 == 0:
-        print("FizzBuzz")  # Multiple of both 3 and 5
+# for num in range(1, 101):
+#     if num % 3 == 0 and num % 5 == 0:
+#         print("FizzBuzz")  # Multiple of both 3 and 5
+#
+#     elif num % 3 == 0:
+#         print("Fizz")
+#     elif num % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(num)
 
-    elif num % 3 == 0:
-        print("Fizz")
-    elif num % 5 == 0:
-        print("Buzz")
-    else:
-        print(num)
+# 7. Find the maximum number in a list
+
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# max_num = max(my_list)
+# print(max_num)
+
