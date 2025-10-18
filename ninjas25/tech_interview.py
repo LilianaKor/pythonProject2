@@ -6,8 +6,8 @@ string = "offer"
 def reverse(string):
     return ''.join(reversed(string))
 
-print(reverse(string))
 
+print(reverse(string))
 
 # def reverse_string(s: str) -> str:
 #     result = ''
@@ -20,8 +20,11 @@ print(reverse(string))
 
 # 2. Task: To check if a string is a palindrome
 string = "civic"
+
+
 def is_palindrome(s):
     return s == s[::-1]
+
 
 print(is_palindrome(string))
 
@@ -30,7 +33,9 @@ print(is_palindrome(string))
 def count_vowels(s):
     return sum(c in 'aeiou' for c in s.lower())
 
+
 print(count_vowels("Hello"))
+
 
 # def count_vowels(s):
 #     return sum(1 for char in s.lower() if char in 'aeiou')
@@ -43,6 +48,7 @@ print(count_vowels("Hello"))
 def count_duplicates(s):
     return len(s) - len(set(s))
 
+
 print(count_duplicates("Hello"))
 
 from collections import Counter
@@ -50,6 +56,7 @@ from collections import Counter
 
 def count_chars(s):
     return Counter(s)
+
 
 print(count_chars("Hello"))
 
@@ -100,6 +107,7 @@ my_list = [1, 2, 3, 4, 55, 6, 7, 8, 9, 10]
 max_num = max(my_list)
 print(max_num)
 
+
 #  or without using max()
 # def find_max(nums):
 #     max_num = nums[0]
@@ -135,3 +143,11 @@ print(max_num)
 
 
 # print(fibonacci(10))
+
+
+# 9 Task: Проверка, являются ли две строки анаграммами
+def is_anagram(s1, s2):
+    return sorted(s1) == sorted(s2)
+
+
+print(is_anagram("listen", "silent"))
