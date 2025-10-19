@@ -9,10 +9,8 @@
 #  password состоит только из букв и цифр.
 # 5. Если password некорректный, то функция должна вызвать исключение ValueError.
 # 6. Если “регистрация” прошла успешно, то функция должна вернуть True.
-#
 # Дополнительно: создайте свой тип исключения RegistrationError и используйте
 # его вместо ValueError.
-
 
 
 class RegistrationError(Exception):  # create custom - all exceptions must inherit from Exception
@@ -23,7 +21,7 @@ def registration(username, password):
     if not (isinstance(username, str) and 4 <= len(username) <= 15 and username.isalpha()):  # str validation
         raise RegistrationError('username incorrect')
 
-    if not (isinstance(password, str) and 8 <= len(password) <= 45 and password.isalnum()): # str, int validation
+    if not (isinstance(password, str) and 8 <= len(password) <= 45 and password.isalnum()):  # str, int validation
         raise RegistrationError('password incorrect')
 
     return True
@@ -57,7 +55,7 @@ while True:
             print('Success!')
             break
     except RegistrationError:
-        print('Error registration!') # until the correct data is entered
+        print('Error registration!')  # until the correct data is entered
 
 """
 Дорогой дневник...
@@ -81,16 +79,13 @@ while True:
     if string == "записать":
         message = input('Введите строку, которая будет записана в файл')
 
-        with open('journal.txt', 'a', encoding='utf-8') as file: #'a' so append before writing to the file
+        with open('journal.txt', 'a', encoding='utf-8') as file:  # 'a' so append before writing to the file
             file.write(f"{message}\n")
 
     elif string == "прочитать":
-        with open('journal.txt', 'r', encoding='utf-8') as file: # as a file we interact with the file by reading
+        with open('journal.txt', 'r', encoding='utf-8') as file:  # as a file we interact with the file by reading
             print(file.read())
 
     elif string == "выйти":
         print('Еще увидимся!')
         break
-
-
-
