@@ -29,3 +29,6 @@ class RegistrationError(Exception):
 def registration(username, password):
     if not (isinstance(username, str) and 4 <= len(username) <= 15 and username.isalpha()):
         raise RegistrationError('username incorrect')
+
+    if not (isinstance(password, str) and 8 <= len(password) <= 45 and password.isalnum()):
+        raise RegistrationError('password incorrect')
