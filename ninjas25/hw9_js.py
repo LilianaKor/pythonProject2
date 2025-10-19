@@ -218,8 +218,6 @@ def recursive_factorial(n: int) -> int:
 print(recursive_factorial(5))
 
 
-
-
 # math.factorial
 import math
 
