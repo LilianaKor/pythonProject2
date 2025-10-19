@@ -208,11 +208,6 @@ def factorial(n: int) -> int:
 
 print(factorial(5))  # 120
 
-
-
-
-
-
 # recursive factorial
 def recursive_factorial(n: int) -> int:
     if n == 0 or n == 1:
