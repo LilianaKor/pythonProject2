@@ -74,3 +74,23 @@ while True:
 Программа пишет в консоль “Еще увидимся!”, выходит из бесконечного цикла и завершается.
 - Если пользователь ввел что-то другое: Программа ничего не делает, просто возвращается к следующей
 итерации бесконечного цикла."""
+
+while True:
+    string = input('Введите “прочитать”, “записать”, or “выйти”: ')
+
+    if string == "записать":
+        message = input('Введите строку, которая будет записана в файл')
+
+        with open('journal.txt', 'a', encoding='utf-8') as file: #'a' so append before writing to the file
+            file.write(f"{message}\n")
+
+    elif string == "прочитать":
+        with open('journal.txt', 'r', encoding='utf-8') as file: # as a file we interact with the file by reading
+            print(file.read())
+
+    elif string == "выйти":
+        print('Еще увидимся!')
+        break
+
+
+
