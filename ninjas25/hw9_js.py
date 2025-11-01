@@ -97,7 +97,7 @@ print(sumNumbersFromString("jshs7Jsh3shhs1.5hdhdje1…5dhdh"))  # 13 =7 + 3 + 1.
 # print(sumNumbersFromString("aa3bb2...7cc"))  # 12
 
 
-def fibRecursive(n: int) -> int:  # Эта функция считает число Фибоначчи с индексом n
+def fibRecursive(n: int) -> int:  # Эта функция считает число Фибоначчи с `aиндексом n
     if n <= 1:
         return n
     return fibRecursive(n - 1) + fibRecursive(n - 2)
@@ -208,6 +208,7 @@ def factorial(n: int) -> int:
 
 print(factorial(5))  # 120
 
+
 # recursive factorial
 def recursive_factorial(n: int) -> int:
     if n == 0 or n == 1:
@@ -216,7 +217,6 @@ def recursive_factorial(n: int) -> int:
 
 
 print(recursive_factorial(5))
-
 
 # math.factorial
 import math
