@@ -1,13 +1,11 @@
 """
-1: Fibonacci Sequence
-Task: Given a non-negative integer n, return the nth Fibonacci number.
+1: Fibonacci Sequence Task: Given a non-negative integer n, return the nth Fibonacci number.
 F0 = 0 and F1 = 1.
 Example:
 n = 6 → 8
 function fib(n) {
 }
-2. Sum All Numbers in a Messy String
-Task:
+2. Sum All Numbers in a Messy String   Task:
 Given a string that mixes letters and numbers, extract all numbers and return their sum.
 Numbers can be integers like 7 or decimals like 1.5. Sometimes “…” means a decimal point.
 Example:
